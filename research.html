@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research - MARA R. REVKIN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="site-title" href="index.html">MARA R. REVKIN</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">C.V.</a></li>
+        <li><a href="data.html">Data</a></li>
+        <li><a href="policy-ngo-reports.html">Policy &amp; NGO Reports</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">C.V.</a>
+      <a href="data.html">Data</a>
+      <a href="policy-ngo-reports.html">Policy &amp; NGO Reports</a>
+      <a href="media.html">Media</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Research</h1>
+    <hr class="divider" />
+  </div>
+
+  <div class="main-content">
+
+    <!-- Row 1: three research areas -->
+    <div class="research-grid">
+
+      <div class="research-area">
+        <h2><a href="#">POLICE &amp; CRIMINAL LAW</a></h2>
+        <img src="images/research-police.jpeg" alt="Police car in Bartella, Iraq" />
+        <p class="img-caption">Police car in Bartella, Iraq (Revkin 2018)</p>
+      </div>
+
+      <div class="research-area">
+        <h2><a href="#">REBEL GOVERNANCE</a></h2>
+        <img src="images/research-rebel-governance.jpg" alt="Child's drawing of life under the Islamic State in Mosul, Iraq" />
+        <p class="img-caption">A child's drawing of life under the Islamic State in Mosul, Iraq (Revkin 2017)</p>
+      </div>
+
+      <div class="research-area">
+        <h2><a href="#">TRANSITIONAL JUSTICE</a></h2>
+        <img src="images/research-transitional-justice.jpeg" alt="Mural in Mosul, Iraq" />
+        <p class="img-caption">Mural in Mosul, Iraq (Revkin 2019)</p>
+      </div>
+
+      <div class="research-area">
+        <h2><a href="#">COMPARATIVE LAW OF THE MIDDLE EAST &amp; NORTH AFRICA</a></h2>
+        <img src="images/research-comparative-law.jpg" alt="Graffiti in Cairo, Egypt" />
+        <p class="img-caption">Graffiti in Cairo, Egypt (Revkin 2016)</p>
+      </div>
+
+      <div class="research-area">
+        <h2><a href="#">LAW OF ARMED CONFLICT</a></h2>
+        <img src="images/research-law-armed-conflict.jpg" alt="A child's drawing of the battle for Mosul, Iraq" />
+        <p class="img-caption">A child's drawing of the battle for Mosul, Iraq (Revkin 2018)</p>
+      </div>
+
+      <div class="research-area">
+        <h2><a href="#">HUMAN RIGHTS</a></h2>
+        <img src="images/research-human-rights.jpeg" alt="Al-Hol closed camp in northeast Syria" />
+        <p class="img-caption">Al-Hol closed camp in northeast Syria (Revkin 2022)</p>
+      </div>
+
+    </div><!-- end .research-grid -->
+
+    <hr class="divider" style="margin-top: 20px;" />
+
+    <div style="font-size:17px; margin-top: 24px;">
+      <p>For papers and publications in each area, please see my <a href="cv.html">C.V.</a> or visit my <a href="https://scholar.google.com/citations?user=qWJtt4oAAAAJ&hl=en" target="_blank">Google Scholar page</a>.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Mara Redlich Revkin
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-nav').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

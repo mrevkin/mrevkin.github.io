@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data - MARA R. REVKIN</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="site-title" href="index.html">MARA R. REVKIN</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">C.V.</a></li>
+        <li><a href="data.html" class="active">Data</a></li>
+        <li><a href="policy-ngo-reports.html">Policy &amp; NGO Reports</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html">C.V.</a>
+      <a href="data.html">Data</a>
+      <a href="policy-ngo-reports.html">Policy &amp; NGO Reports</a>
+      <a href="media.html">Media</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Data</h1>
+    <hr class="divider" />
+  </div>
+
+  <div class="main-content">
+
+    <p style="font-size:18px; margin-bottom:30px;">
+      You can find the data and replication files for my published work below. Please reach out if you have any questions or would like to use the data in your own work. Thanks!
+    </p>
+
+    <!-- Dataset 1 -->
+    <div class="dataset-entry">
+      <h2>Islamic State Tax Policy Implementation Dataset (ISTPI)</h2>
+      <p>
+        <strong>From:</strong> Mara R. Revkin, <em>What Explains Taxation by Resource-Rich Rebels? Evidence from the Islamic State in Syria</em>,
+        82 <a href="https://www.mararevkin.com/uploads/1/2/3/2/123214819/jop_revkin.pdf" target="_blank">The Journal of Politics</a> 757–764 (2020).<br />
+        <strong>Data and Replication Files:</strong> <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/9NYAP7" target="_blank">Harvard Dataverse</a>
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Dataset 2 -->
+    <div class="dataset-entry">
+      <h2>Islamic State Governance Dataset (ISGD)</h2>
+      <p>
+        <strong>From:</strong> Mara R. Revkin, <em>Competitive Governance and Displacement Decisions Under Rebel Rule: Evidence from the Islamic State in Iraq</em>,
+        65 <a href="https://www.mararevkin.com/uploads/1/2/3/2/123214819/revkin_jcr_2020.pdf" target="_blank">The Journal of Conflict Resolution</a> 46–80 (2021).<br />
+        <strong>Data and Replication Files:</strong> <a href="https://journals.sagepub.com/doi/suppl/10.1177/0022002720951864" target="_blank">The Journal of Conflict Resolution</a>
+      </p>
+    </div>
+
+    <hr class="divider" />
+
+    <!-- Dataset 3 -->
+    <div class="dataset-entry">
+      <h2>Islamic State Policies and Institutions Dataset (ISPID) — <em>in progress</em></h2>
+      <p>
+        <strong>From:</strong> Mara R. Revkin, <em>Insurgent Legality: State-Building and Failure of the Islamic State</em> (Working Paper, 2021)
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Mara Redlich Revkin
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobile-nav').classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

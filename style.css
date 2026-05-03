@@ -1,0 +1,432 @@
+/* =============================================
+   MARA REVKIN - GitHub Pages Site
+   style.css
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Questrial&display=swap');
+
+/* --- Reset & Base --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 18px;
+  color: #000;
+  background: #fff;
+  line-height: 1.65;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Navigation --- */
+nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 14px 30px;
+}
+
+.site-title {
+  font-family: 'EB Garamond', serif;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  justify-content: flex-end;
+}
+
+.nav-links a {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+/* Hamburger (mobile) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transition: all 0.2s;
+}
+
+/* Mobile nav */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 12px 30px 20px;
+}
+
+.mobile-nav a {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-nav.open {
+  display: flex;
+}
+
+/* --- Page header (inner pages) --- */
+.page-header {
+  text-align: center;
+  padding: 40px 30px 10px;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-family: 'EB Garamond', serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+hr.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 0 0 24px;
+}
+
+/* --- Main content container --- */
+.main-content {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 30px 60px;
+}
+
+/* --- HOME PAGE --- */
+
+/* Banner: full-width landscape photo */
+.home-banner {
+  width: 100%;
+  max-height: 340px;
+  overflow: hidden;
+}
+
+.home-banner img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+/* Two-column home layout */
+.home-grid {
+  display: grid;
+  grid-template-columns: 68% 1fr;
+  gap: 40px;
+  padding: 36px 0 20px;
+}
+
+.bio-text {
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.bio-text p + p {
+  margin-top: 14px;
+}
+
+.sidebar-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-col img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.contact-info {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.field-photo-caption {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+  font-style: italic;
+}
+
+/* --- RESEARCH PAGE --- */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px 24px;
+  margin-bottom: 40px;
+}
+
+.research-area h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+
+.research-area h2 a {
+  text-decoration: none;
+}
+
+.research-area h2 a:hover {
+  text-decoration: underline;
+}
+
+.research-area img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.img-caption {
+  font-size: 13px;
+  color: #555;
+  margin-top: 6px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* --- TEACHING PAGE --- */
+.teaching-section {
+  margin-bottom: 36px;
+}
+
+.teaching-section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  margin-bottom: 30px;
+}
+
+/* --- DATA PAGE --- */
+.dataset-entry {
+  margin-bottom: 30px;
+}
+
+.dataset-entry h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.dataset-entry p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* --- CV PAGE --- */
+.cv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* --- POLICY PAGE --- */
+.policy-intro {
+  font-size: 17px;
+  margin-bottom: 24px;
+}
+
+.policy-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.policy-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  padding: 4px;
+}
+
+.policy-item .img-caption {
+  margin-top: 6px;
+}
+
+/* --- MEDIA PAGE --- */
+.media-section {
+  margin-bottom: 32px;
+}
+
+.media-section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.media-section ul {
+  list-style: disc;
+  padding-left: 24px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.media-section ul li {
+  margin-bottom: 6px;
+}
+
+/* --- CONTACT PAGE --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-details h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.contact-details p {
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+/* --- Footer --- */
+footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 18px 30px;
+  font-size: 14px;
+  color: #888;
+  font-family: 'EB Garamond', serif;
+}
+
+/* --- Placeholder images --- */
+.placeholder-img {
+  background: #f2f2f2;
+  border: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  padding: 10px;
+}
+
+.placeholder-headshot {
+  width: 100%;
+  aspect-ratio: 3/4;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 900px) {
+  .home-grid,
+  .two-col,
+  .cv-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-grid,
+  .policy-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .research-grid,
+  .policy-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .home-banner img {
+    height: 220px;
+  }
+}
