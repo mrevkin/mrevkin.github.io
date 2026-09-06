@@ -620,16 +620,7 @@ footer {
   border-color: #000;
 }
 
-.no-match {
-  display: none;
-  font-size: 15px;
-  font-style: italic;
-  color: #777;
-  padding: 6px 0 2px;
-}
-
-.theme.is-filtered-out .theme-works { display: none; }
-.theme.is-filtered-out .no-match { display: block; }
+.theme.is-filtered-out { display: none; }
 
 
 .oped-abstract {
