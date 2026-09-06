@@ -525,6 +525,20 @@ footer {
   padding: 5px 0;
 }
 
+/* --- REFERENCE LIST --- */
+.theme-works li {
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+
+.theme-works li a { text-decoration: underline; }
+
+.repo-note {
+  font-size: 15px;
+  color: #555;
+  margin: -22px 0 30px;
+}
+
 .theme-works .venue {
   color: #666;
   font-style: italic;
