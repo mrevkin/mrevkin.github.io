@@ -553,6 +553,9 @@ footer {
 
 .photo-strip img { width: 100%; height: 155px; object-fit: cover; }
 
+.photo-strip.three { grid-template-columns: repeat(3, 1fr); }
+.photo-strip.three img { height: 210px; }
+
 .photo-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
