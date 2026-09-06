@@ -695,3 +695,7 @@ footer {
 .rep-list { list-style: none; margin-top: 14px; }
 .rep-list li { font-size: 16px; line-height: 1.6; padding: 9px 0; border-bottom: 1px solid #f0efed; }
 .rep-links { font-size: 14px; color: #555; }
+
+
+.linknote { font-size: 13px; color: #888; }
+span[lang="ar"] { font-size: 1.06em; }
