@@ -430,3 +430,134 @@ footer {
     height: 220px;
   }
 }
+
+
+/* --- RESEARCH AREAS (themes) --- */
+.areas-intro {
+  font-size: 18px;
+  line-height: 1.75;
+  text-align: justify;
+  margin-bottom: 36px;
+}
+
+.theme { margin-bottom: 48px; }
+
+.theme-photo { position: relative; }
+
+.theme-photo img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.theme-overlay {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 28px;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 35%, rgba(0,0,0,0.72) 100%);
+}
+
+.theme-overlay h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 31px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+}
+
+.theme-sub {
+  font-size: 16px;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  margin-top: 4px;
+}
+
+.theme-body { margin-top: 18px; }
+
+.theme-body > p {
+  font-size: 17px;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+.strands {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.strands span {
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 4px 14px;
+  color: #333;
+}
+
+.theme-methods {
+  font-size: 15px;
+  color: #555;
+  margin-top: 16px;
+}
+
+.theme-methods strong {
+  font-variant: small-caps;
+  letter-spacing: 0.6px;
+  color: #333;
+  margin-right: 6px;
+}
+
+.theme-works {
+  list-style: none;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.theme-works li {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 5px 0;
+}
+
+.theme-works .venue {
+  color: #666;
+  font-style: italic;
+}
+
+.photo-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.photo-strip img { width: 100%; height: 155px; object-fit: cover; }
+
+.photo-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.photo-pair img { width: 100%; height: 250px; object-fit: cover; }
+
+.photo-single { margin-top: 24px; }
+.photo-single img { width: 100%; height: 260px; object-fit: cover; }
+
+@media (max-width: 900px) {
+  .photo-strip { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+  .photo-pair { grid-template-columns: 1fr; }
+  .theme-photo img { height: 215px; }
+  .theme-overlay h2 { font-size: 24px; }
+  .theme-sub { font-size: 14px; }
+}
