@@ -655,3 +655,19 @@ footer {
   border-left: 2px solid #e0e0e0;
   text-align: justify;
 }
+
+
+.ssrn-tag {
+  font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  color: #7a2e2e;
+  border: 1px solid #e0d5d5;
+  border-radius: 3px;
+  padding: 1px 7px;
+  margin-left: 4px;
+  white-space: nowrap;
+}
+
+.ssrn-tag:hover { border-color: #7a2e2e; }
