@@ -630,3 +630,14 @@ footer {
 
 .theme.is-filtered-out .theme-works { display: none; }
 .theme.is-filtered-out .no-match { display: block; }
+
+
+.oped-abstract {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: #444;
+  margin: 8px 0 4px 0;
+  padding-left: 14px;
+  border-left: 2px solid #e0e0e0;
+  text-align: justify;
+}
