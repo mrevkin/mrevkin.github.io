@@ -561,3 +561,58 @@ footer {
   .theme-overlay h2 { font-size: 24px; }
   .theme-sub { font-size: 14px; }
 }
+
+
+/* --- METHOD FILTER --- */
+.method-filter {
+  margin: 0 0 34px;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  background: #fafafa;
+}
+
+.filter-label {
+  display: block;
+  font-size: 13px;
+  font-variant: small-caps;
+  letter-spacing: 0.8px;
+  color: #666;
+  margin-bottom: 9px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 15px;
+  color: #333;
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.filter-btn:hover { border-color: #999; }
+
+.filter-btn.is-on {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.no-match {
+  display: none;
+  font-size: 15px;
+  font-style: italic;
+  color: #777;
+  padding: 6px 0 2px;
+}
+
+.theme.is-filtered-out .theme-works { display: none; }
+.theme.is-filtered-out .no-match { display: block; }
